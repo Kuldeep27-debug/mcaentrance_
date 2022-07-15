@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 5rem 0; 
+}
+
+/* Root Code */
+
+:root {
+  --h1: #EE2219ff;
+  --h2: #EE2219ff;
+  --h3: #00168Fff;
+  --white: #fff;
+  --divBackground: rgb(253, 248, 248);
+}
+
+h1 {
+  color: var(--h1);
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  color: var(--h2);
+  margin: 0.5rem 0;
+}
+
+h3 {
+  color: var(--h3);
+  margin: 1rem 0 0.5rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+/* header Styling */
+
+.logo-img {
+  width: 12%;
+}
+
+.Entrancce-info {
+  background-color: var(--divBackground);
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.syllabus-info {
+  background-color: var(--divBackground);
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+section {
+  background-color: var(--divBackground);
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.highlighted-para {
+  font-weight: 700;
+  margin: 0.5rem auto;
+}
+
+/* Our Alumnai Section */
+
+.alumnai-img {
+  width: 40%;
+  border: none;
+  border-radius: 100%;
+}
+
+.alumnai {
+  width: 250px;
+  height: 45vh;
+  background-color: var(--h3);
+  border: none;
+  border-radius: 2.5rem;
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+.ourAlumnai-Heading {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.slider {
+  display: flex;
+  gap: 2rem;
+  animation: slideshow 100s linear infinite;
+}
+
+.slider-2 {
+  margin-left: 2rem;
+}
+
+.slideWrapper {
+  display: flex;
+  overflow-x: hidden;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Why Us Section */
+.why-us-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icons {
+  font-size: 2rem;
+  color: var(--h1);
+}
+
+.whyUs-heading {
+  text-align: center;
+}
+
+.why-us-icons {
+  color: var(--h1);
+  font-size: 2rem;
+  }
+
+
+/* Our Faculty Section */
+
+.faculty-img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.facultyMember {
+  width: 15%;
+  height: 45vh;
+  border-radius: 1rem;
+}
+
+
+.our-faculty {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.ourFaculty-Heading {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+
+
+/* Student Testimonials Section */
+
+.studentTestimonial-heading {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 45%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(117, 112, 112);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #1b1b1b;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--h3);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.student-img {
+  width: 20%;
+  border-radius: 10rem;
+}
+
+
+
+/* Submit Form Section */
+
+
+
+/* form section */
+/* input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #00168Fff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #00168Fff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--h3);
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--h3);
+  width: 100%;
+}
+
+.form-sub {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--h3);
+  border: 2px solid var(--h3);
+  border-radius: 20rem;
+  color: white;
+  display: inline-block;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.form-res {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--h3);
+  border-radius: 20rem;
+  color: var(--h3);
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
